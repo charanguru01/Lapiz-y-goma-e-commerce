@@ -1,5 +1,5 @@
 const products = [
-    { id: 1, name: "Lápiz Grafito HB x12", price: 2990, cat: "Escritura", img: "https://images.unsplash.com/photo-1585336139118-89c1f337526b?w=300" },
+    { id: 1, name: "Lápiz Grafito HB x12", price: 2990, cat: "Escritura", img: "https://images.unsplash.com/photo-1565359184520-fcff70f99c24?w=300" },
     { id: 2, name: "Cuaderno Universitario", price: 3500, cat: "Papelería", img: "https://images.unsplash.com/photo-1531346878377-a5be20888e57?w=300" },
     { id: 3, name: "Set Acuarelas Pro", price: 15990, cat: "Arte", img: "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=300" },
     { id: 4, name: "Calculadora Científica", price: 22000, cat: "Tecnología", img: "https://images.unsplash.com/photo-1648201637025-1c77b9be3013?w=300" },
