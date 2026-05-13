@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAPIZ&GOMA | Tu Librería Online</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="top-promo">
+        🔥 OFERTAS FLASH | Hasta 40% de descuento en artículos escolares 🔥
+    </div>
+
+    <section class="hero-banner">
+        <div class="hero-overlay">
+            <h1>Todo para tus clases y creatividad 🎨</h1>
+            <p>Descubre productos de papelería, arte y tecnología al mejor precio.</p>
+            <button class="hero-btn">Comprar Ofertas</button>
+        </div>
+    </section>
+
+    <header class="header-main">
+        <div class="header-container">
+            <div class="logo">LAPIZ<span>&GOMA</span></div>
+
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="¿Qué estás buscando hoy?">
+            </div>
+
+            <div class="cart-icon">
+                🛒 <span id="cart-counter">0</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="app-wrapper">
+
+        <aside class="filters">
+            <h3>Categorías</h3>
+            <button data-category="Todos">Ver Todo</button>
+            <button data-category="Escritura">Escritura</button>
+            <button data-category="Papelería">Papelería</button>
+            <button data-category="Arte">Arte</button>
+            <button data-category="Tecnología">Tecnología</button>
+        </aside>
+
+        <section id="product-grid" class="product-grid"></section>
+
+        <aside class="side-cart">
+            <h3>Mi Carrito</h3>
+
+            <div id="cart-content" class="cart-content">
+                <p>El carrito está vacío</p>
+            </div>
+
+            <div class="cart-summary">
+                <div class="total-line">
+                    Total: <strong id="cart-total">$0</strong>
+                </div>
+
+                <form id="checkoutForm" novalidate>
+
+                    <input type="text" id="custName" placeholder="Nombre completo" maxlength="60" required>
+
+                    <input type="email" id="custEmail" placeholder="usuario@email.com" required>
+
+                    <select id="paymentMethod" required>
+                        <option value="">Seleccione método de pago</option>
+                        <option value="Débito">Débito</option>
+                        <option value="Crédito">Crédito</option>
+                        <option value="Transferencia">Transferencia</option>
+                    </select>
+
+                    <button type="submit" class="btn-checkout">
+                        Pagar Pedido
+                    </button>
+                </form>
+
+                <div id="form-message"></div>
+            </div>
+        </aside>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
